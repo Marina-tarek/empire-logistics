@@ -1,4 +1,6 @@
 import { featuredShipmentStats } from "@/data/featured-shipment";
+import SectionTitle from "../common/SectionTitle";
+import { homeSections } from "./../../data/homeSectionsTitle";
 
 export default function FeaturedShipment() {
   return (
@@ -23,17 +25,11 @@ export default function FeaturedShipment() {
 
           {/*Top Left content */}
           <div className="lg:relative  z-10 bg-white p-6 md:p-10 pr-6  rounded-br-[31px] flex flex-col justify-center ">
-            <span className="text-sm font-semibold tracking-wider text-gray-500 uppercase mb-2">
-              Our Impact Worldwide
-            </span>
-            <h2 className="text-2xl md:text-4xl font-bold md:font-extrabold text-slate-900 mb-4 leading-tight">
-              Logistics in Numbers
-            </h2>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              Every shipment reflects our commitment to efficiency, reliability,
-              and global connectivity. Our growing logistics network helps
-              businesses move cargo faster and smarter.
-            </p>
+            <SectionTitle
+              {...homeSections.featuredShipment}
+              align="left"
+              variant="light"
+            />
           </div>
 
           <div className="md:relative z-0 hidden lg:flex md:h-87.5 xl:h-120 rounded-[31px]" />
