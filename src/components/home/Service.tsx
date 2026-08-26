@@ -4,14 +4,14 @@ import SectionTitle from "../common/SectionTitle";
 import { serviceSections } from "@/data/service";
 import ServiceCard from "../common/ServiceCard";
 import ViewAllButton from "../common/ViewAllButton";
-import { useState } from "react";
+import { useShowMore } from "@/hooks/useShowMore";
 
 function Service() {
-  const [showAll, setShowAll] = useState(false);
-  const visibleServices = showAll
-    ? serviceSections
-    : serviceSections.slice(0, 4);
-
+  const {
+    showAll,
+    visibleItems: visibleServices,
+    toggleShowAll,
+  } = useShowMore(serviceSections, 4);
   return (
     <section id="service" className="bg-primary">
       <div className="container-custom py-24.25 lg:py-31">
@@ -34,7 +34,7 @@ function Service() {
             <ServiceCard key={index} {...service} />
           ))}
         </div>
-        <ViewAllButton onClick={() => setShowAll((prev) => !prev)} className="text-white hover:text-white ">
+        <ViewAllButton onClick={toggleShowAll} className="text-white hover:text-white ">
           
           {showAll ? "Show Less" : "View All"}
         </ViewAllButton>
