@@ -29,7 +29,7 @@ export const homeSections = {
       "At dui mi leo vitae vitae a. Egestas lectus scelerisque tellus lacus. Adipiscing malesuada ut quam eu volutpat nullam convallis.",
   },
 
-  tracking: {
+  industrySector: {
     highlightTitle: "How I can help you",
     title: "INDUSTRY SECTORS",
     description:

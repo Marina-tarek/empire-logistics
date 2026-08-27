@@ -1,6 +1,7 @@
 import About from "@/components/home/About";
 import FeaturedShipment from "@/components/home/FeatureShipment";
 import Hero from "@/components/home/Hero";
+import IndustrySectors from "@/components/home/IndustrySector";
 import Service from "@/components/home/Service";
 import Transportation from "@/components/home/Transportation";
 
@@ -13,6 +14,7 @@ export default function Home() {
    <FeaturedShipment/>
    <Service/>
    <Transportation/>
+   <IndustrySectors/>
    </main>
   );
 }
