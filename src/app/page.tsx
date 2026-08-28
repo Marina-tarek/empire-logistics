@@ -5,6 +5,7 @@ import IndustrySectors from "@/components/home/IndustrySector";
 import Service from "@/components/home/Service";
 import Transportation from "@/components/home/Transportation";
 import TypeOfContainer from "@/components/home/TypeOfContainer"
+import Partners from "@/components/home/Partners";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
    <Transportation/>
    <IndustrySectors/>
    <TypeOfContainer/>
+   <Partners/>
    </main>
   );
 }
