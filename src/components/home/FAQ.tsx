@@ -24,7 +24,7 @@ function FAQ() {
           <SectionTitle {...homeSections.faq} variant="dark" align="center" />
         </div>
         {/* FQA */}
-        <div className="pt-10 lg:pt-12 gap-4 lg:gap-6 flex flex-col">
+        <div className="pt-10 lg:pt-12 gap-4 lg:gap-6 flex flex-col lg:px-[93px]">
           {faqData.map((item, index) => (
             <FAQItem
               key={index}
