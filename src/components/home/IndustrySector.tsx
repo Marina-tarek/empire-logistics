@@ -25,9 +25,9 @@ function IndustrySectors() {
         />
 
         {/* Industries Content */}
-        <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-[4fr_7fr] lg:px-12.5 xl:px-25">
+        <div className="mt-12 grid grid-cols-2 gap-6 lg:grid-cols-[4fr_7fr] lg:px-12.5 xl:px-25">
           {/* Industries List */}
-          <div className="flex lg:flex-col py-[25.5px] pe-6">
+          <div className="flex flex-col py-[25.5px] pe-6">
             {industries.map((industry, index) => {
               const isActive = activeIndustry === index;
 
@@ -75,7 +75,7 @@ function IndustrySectors() {
           </div>
 
           {/* Industry Image */}
-          <div className="relative min-h-100 w-full overflow-hidden rounded-[5px]">
+          <div className="relative h-[50%] lg:min-h-100 w-full overflow-hidden rounded-[5px]">
             {activeImage && (
               <Image
                 src={activeImage}
