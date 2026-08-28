@@ -134,7 +134,7 @@
     padding-inline: 16px;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1100px) {
     .container-custom {
       padding-inline: 120px;
     }
