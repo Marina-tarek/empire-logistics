@@ -6,6 +6,7 @@ import Service from "@/components/home/Service";
 import Transportation from "@/components/home/Transportation";
 import TypeOfContainer from "@/components/home/TypeOfContainer"
 import Partners from "@/components/home/Partners";
+import LatestNews from "@/components/home/LatestNews";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
    <IndustrySectors/>
    <TypeOfContainer/>
    <Partners/>
+   <LatestNews/>
    </main>
   );
 }
