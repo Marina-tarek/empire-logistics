@@ -14,9 +14,10 @@ export default function FeaturedShipment() {
               loop
               muted
               playsInline
-              className="w-full h-full object-cover -scale-x-100  scale-y-100"
+              poster="/images/featured-shipment image.png"
+              className="w-full h-full object-cover -scale-x-100 "
             >
-              <source src="/videos/featured-shipment.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dnvr7vfuw/video/upload/featured-shipment.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             {/* Transparent color tint layer */}

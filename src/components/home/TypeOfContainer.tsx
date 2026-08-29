@@ -11,9 +11,11 @@ function TypeOfContainer() {
             muted
             loop
             playsInline
+            preload="auto"
+            poster="/images/container image.png"
             className="h-full w-full object-cover"
           >
-            <source src="/videos/container.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dnvr7vfuw/video/upload/q_auto,f_auto/container.mp4" type="video/mp4" />
           </video>
 
           {/* Gradient */}

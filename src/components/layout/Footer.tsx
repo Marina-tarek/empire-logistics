@@ -7,7 +7,7 @@ function Footer() {
   return (
     <section className="bg-primary text-white overflow-hidden relative">
         {/* thin layer in the top */}
-        <div className="absolute top-0 h-[10px] w-full bg-[linear-gradient(180deg,#1A1819_0%,#444444_52%,#1A1819_100%)] z-10"/>
+        <div className="absolute top-0 h-2.5 w-full bg-[linear-gradient(180deg,#1A1819_0%,#444444_52%,#1A1819_100%)] z-10"/>
       <div className="container-custom py-20.5">
         {/* contetnt */}
         <div className="flex flex-col gap-22">
@@ -17,7 +17,8 @@ function Footer() {
               width={142}
               height={119}
               src="/images/logo/white logo.png"
-              alt="logo image"
+              alt="Empire Logistics"
+              className="w-37.5 h-auto"
             />
           </div>
           {/* links */}
@@ -29,7 +30,7 @@ function Footer() {
                             <Link href="#" className="text-16px leading-6">Home</Link>
                         </li>
                         {
-                          navLinks.map((navLink,index)=>(<li> <Link href={navLink.href} key={index} className="text-16px leading-6">{navLink.label}</Link> </li>))
+                          navLinks.map((navLink,index)=>(<li key={index}> <Link href={navLink.href}  className="text-16px leading-6">{navLink.label}</Link> </li>))
                         }
                     </ul>
                 </div>
